@@ -24,5 +24,14 @@ let message = "";
 
 // Funzione per determinare il risultato del gioco (se l'utente ha vinto o perso)
 function gameEvenOrOdd(userChoice, userNumber) {
-    
+     // se la somma dei numeri e pari l'utente ha vinto
+     if (sum % 2 == 0 && userChoice == 'pari') {
+        return message = 'Hai vinto!';
+    // Se la somma dei numeri e dispari e l'utente ha scelto dispari ha vinto
+    } else if (sum % 2 ==- 1 && userChoice == 'dispari') {
+        return message = 'Hai vinto!';
+    // Altrimenti, l'utente perde
+    } else {
+        return message = 'Hai perso!';
+    }
 }
