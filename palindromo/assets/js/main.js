@@ -13,4 +13,12 @@ function isPal(word){
 for(let i = 0 ; word.lenght -1 ; i >= 0 ; i-- ){
     invertWord += word[i];
 }
+
+//aggiungo if and else per farmi dire se la parola scritta e poi invertita risulta un palindromo
+if (word === invertWord){
+    return = true
+
+}else{
+    return = false
+}
 }
