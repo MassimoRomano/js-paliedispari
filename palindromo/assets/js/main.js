@@ -22,7 +22,7 @@ function isPal(word) {
     }
 }
 
-// Chimo la funziona e la stampo in console per vedere il risultato
+// Chiamo la funziona e la stampo in console per vedere il risultato
 if (isPal(word)){
     console.log(`La parola "${word}" e un palindromo`); 
 }else{
