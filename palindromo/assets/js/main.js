@@ -1,24 +1,30 @@
+console.log('funziona');
+
 // Chiedo all'utente di inseire una parola
 const word = prompt("Inserisci una parola");
 
-//definisco la funzione per verificare se la parola inserita dall'utente sia un palindromo
-function isPal(word){
-
-
-//aggiungo una variabile vuota per poi inseire la parola invertita
+// Definisco la funzione per verificare se la parola inserita dall'utente sia un palindromo
+function isPal(word) {
+    // Aggiungo una variabile vuota per poi inserire la parola invertita
     let invertWord = '';
-    
 
-//avvio un ciclo for per invertire la parola
-for(let i = 0 ; word.lenght -1 ; i >= 0 ; i-- ){
-    invertWord += word[i];
+    // Avvio un ciclo for per invertire la parola
+    for (let i = word.length - 1; i >= 0; i--) {
+        invertWord += word[i];
+    }
+
+    // Aggiungo if e else per farmi dire se la parola scritta e poi invertita risulta un palindromo
+    if (word === invertWord) {
+        return true;
+       
+    } else {
+        return false;
+    }
 }
 
-//aggiungo if and else per farmi dire se la parola scritta e poi invertita risulta un palindromo
-if (word === invertWord){
-    return = true
-
+// Chimo la funziona e la stampo in console per vedere il risultato
+if (isPal(word)){
+    console.log(`La parola "${word}" e un palindromo`); 
 }else{
-    return = false
-}
+    console.log(`La parola "${word}" non e un palindromo`);
 }
